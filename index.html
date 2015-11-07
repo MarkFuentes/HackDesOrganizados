@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html manifest="offline.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- This ensures the canvas works on IE9+.  Don't remove it! -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<!-- Standardised web app manifest -->
+	<link rel="manifest" href="appmanifest.json" />
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+	<script  type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<title>Donacion</title>
+</head>
+<body>
+<div class="container">
+	<div class="page" id="p-1">
+		<div id="principal-circle">
+			<div class=" slide visible"><img src="images/corazon.png"></div>
+			<div class="slide"><img src="images/riñon2.png" alt=""></div>
+			<div class="slide"><img src="images/pulmon2.png" alt=""></div>
+		</div>
+		<div id="title"><h1>AMAR <br> ES DONAR <br> y ACTUAR</h1></div>
+		<div id="circulo-menu"><img src="images/menu.png" alt=""></div>
+		<div id="menu">
+			<div id="boton-menu"><h1>X</h1></div>
+			<ul>
+		    <li>
+		        <a href="#p-1">
+		    	<div class="u-element" id="i1">
+		    	<img src="images/house.png">
+		    	<div class="item">
+		    		Volver Arriba
+		    	</div>
+		    	</div>
+		    	</a>
+		    </li>
+		    <li>
+		        <a href="#p-2">
+		    	<div class="u-element" id="i2">
+		    	<img src="images/corazon2.png">
+		    	<div class="item">Corazón</div>
+		    	</div>
+		    	</a>
+		    </li>
+		    <li>
+		        <a href="#p-4">
+		    	<div class="u-element" id="i3">
+		    	<img src="images/pulmon.png">
+		    	<div class="item">Pulmón</div>
+		    	</div>
+		    	</a>
+		    </li>
+		    <li>
+		        <a href="#p-6">
+		    	<div class="u-element" id="i4">
+		    	<img src="images/riñon.png">
+		    	<div class="item">Riñón</div>
+		    	</div>
+		    	</a>
+		    </li>
+		    <li>
+		        <a href="#p-8">
+		    	<div class="u-element" id="i5">
+		    	<img src="images/corazon3.png">
+		    	<div class="item">Vuelvete heroe</div>
+		    	</div>
+		    	</a>
+		    </li>
+			</ul>
+		</div>
+		<a href="#p-8"><div id="invitacion-juego">
+		  <img src="images/corazon3.png">
+		  Se un heróe
+		</div></a>
+	</div>
+	<div class="page" id="p-2">
+	   <div class="triangulo-left">
+	   </div>
+	   <div class="sh-1">
+	   <div class="textleft">La donación de corazón puede ser difícil. El corazón debe ser donado por alguien que esté clínicamente muerto, pero que permanezca con soporte vital.</div>
+	   <img src="images/corazon2.png">
+	   </div>
+	   <div class="triangulo-right"></div>
+	</div>
+	<div class="page" id="p-3"> 
+	<div class="sh-1">
+     <div class="textleft">
+     	El donante de corazón debe ser lo mas compatible con su tipo de tejido para reducir la probabilidad que su cuerpo lo vaya a rechazar. 
+     </div>
+     </div>
+	</div>
+	<div class="page" id="p-4">
+		<div class="sh-1">
+			<div class="textleft">
+			Un transplante de pulmón es un procedimiento quirúrgico que se realiza para extirpar uno a ambos pulmones enfermos de un paciente y reemplazarlo por uni sano de otra persona.
+			</div>
+			<img src="images/pulmon.png">
+		</div>
+	</div>
+	<div class="page" id="p-5">
+		<div class="sh-1">
+			<div class="textleft">
+				La mayoria de los pulmones que se transplantan provienen de donantes de órganos fallecidos. Los adultos sanos y no fumadores compatibles puede donar una parte (un lóbulo) de un o de sis pulmónes en vida. Las personas que donan una parte del pulmón puede vivir saludables con el tejido pulmonar remanente.
+			</div>
+		</div>
+	</div>
+	<div class="page" id="p-6">
+		<div class="sh-1">
+			<div class="textleft">
+				Se aplica a los paciente con enfermedad renal avanzada. Con mayor frecuencia este transplante se realiza con organos de personas fallecidas
+			</div>
+			<img src="images/riñon.png">
+		</div>
+	</div>
+	<div class="page" id="p-7">
+		<div class="sh-1">
+		    En el caso de una donacion de riñon altruista, los donantes vivos potenciales son cuidadosamente evaluados en su cimientos médicos y psicológicos. Esto asegura que el donante está en buena forma para la cirugía y no tiene ninguna enfermedad del riñon. El donante puede seguir su vida saludablemente. Los receptores de riñones de donantes vivos evolucionan extremadamente bien en compraracion con los donantes fallecidos. 
+			<div class="textleft"></div>
+		</div>
+	</div>
+	<div class="page" id="p-8">
+		<div class="sh-1">
+			<div class="textleft">
+				Se un heroe
+			</div>
+			<img src="images/corazon3.png">
+		</div>
+	</div>
+	<div class="page" id="p-9">
+		<div class="sh-1">
+			<script>
+	// Issue a warning if trying to preview an exported project on disk.
+	(function(){
+		// Check for running exported on file protocol
+		if (window.location.protocol.substr(0, 4) === "file")
+		{
+			alert("Exported games won't work until you upload them. (When running on the file:/// protocol, browsers block many features from working for security reasons.)");
+		}
+	})();
+	</script>
+
+		  <div id="c2canvasdi">
+		
+			<!-- The canvas the project will render to.  If you change its ID, don't forget to change the
+			ID the runtime looks for in the jQuery ready event (above). -->
+			<canvas id="c2canvas" width="800" height="600">
+				<!-- This text is displayed if the visitor's browser does not support HTML5.
+				You can change it, but it is a good idea to link to a description of a browser
+				and provide some links to download some popular HTML5-compatible browsers. -->
+				Your browser does not appear to support HTML5.  Try upgrading your browser to the latest version.  <a href="http://www.whatbrowser.org">What is a browser?</a>
+				<br/><br/><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx">Microsoft Internet Explorer</a><br/>
+				<a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a><br/>
+				<a href="http://www.google.com/chrome/">Google Chrome</a><br/>
+				<a href="http://www.apple.com/safari/download/">Apple Safari</a><br/>
+				<a href="http://www.google.com/chromeframe">Google Chrome Frame for Internet Explorer</a><br/>
+			</canvas>
+			
+		</div>
+		</div>
+	</div>
+	<div class="page" id="p-10">
+		<div class="sh-1">
+			Convierte en donador <br>
+			<a href="registro.php" id="submit">Registrate</a> <br>
+			La sangre es ese frágil árbol escarlata que llevamos dentro de nosotros. <br>  ~ Osbert Sitwell
+		</div>
+	</div>
+</div>
+<script src="jquery-2.1.1.min.js"></script>
+
+
+	
+    <!-- The runtime script.  You can rename it, but don't forget to rename the reference here as well.
+    This file will have been minified and obfuscated if you enabled "Minify script" during export. -->
+	<script src="c2runtime.js"></script>
+
+    <script>
+		// Size the canvas to fill the browser viewport.
+		jQuery(window).resize(function() {
+			cr_sizeCanvas(jQuery(window).width(), jQuery(window).height());
+		});
+		
+		// Start the Construct 2 project running on window load.
+		jQuery(document).ready(function ()
+		{
+			// Create new runtime using the c2canvas
+			cr_createRuntime("c2canvas");
+		});
+		
+		// Pause and resume on page becoming visible/invisible
+		function onVisibilityChanged() {
+			if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+				cr_setSuspended(true);
+			else
+				cr_setSuspended(false);
+		};
+		
+		document.addEventListener("visibilitychange", onVisibilityChanged, false);
+		document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+		
+		if (navigator.serviceWorker && navigator.serviceWorker.register)
+		{
+			// Register an empty service worker to trigger web app install banners.
+			navigator.serviceWorker.register("sw.js", { scope: "./" });
+		}
+    </script>
+</body>
+</html>
